@@ -33,7 +33,7 @@ jobs:
         python test.py
     - name: Calculate test coverage
       run: |
-        coverage run --source=practica-gps-ci-master/main.py -m pytest
+        coverage run --source=main.py -m pytest
         coverage report -m
 
   
