@@ -38,11 +38,11 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
      - name: Run static code analysis with Pylint
        run: |
-        pylint main.py
+        pylint practica-gps-ci-master/main.py
    - name: Run tests
       run: |
         python test.py
     - name: Calculate test coverage
       run: |
-        coverage run --source=main.py -m pytest
+        coverage run --source=practica-gps-ci-master/main.py -m pytest
         coverage report -m
