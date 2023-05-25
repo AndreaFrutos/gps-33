@@ -45,6 +45,6 @@ jobs:
     - name: Calculate test coverage
       run: |
         pip install coverage
-        coverage run --source=your_python_directory -m pytest
+        coverage run --source=main.py -m pytest
         coverage report -m
 
