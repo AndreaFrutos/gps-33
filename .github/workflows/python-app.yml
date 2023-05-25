@@ -27,7 +27,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Run static code analysis with Pylint
       run: |
-       pylint practica-gps-ci-master/main.py
+       pylint main.py
     - name: Run tests
       run: |
         python test.py
