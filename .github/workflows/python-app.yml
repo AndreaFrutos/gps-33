@@ -31,7 +31,7 @@ jobs:
        pylint practica-gps-ci-master/main.py
     - name: Run tests
       run: |
-        python test.py
+        python practica-gps-ci-master/test.py
     - name: Calculate test coverage
       run: |
         coverage run --source=practica-gps-ci-master/main.py -m pytest
